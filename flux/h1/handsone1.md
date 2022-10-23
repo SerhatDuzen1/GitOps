@@ -30,7 +30,7 @@ Now we can deploy Flux, using the fluxctl command:
 $ fluxctl install \
 --git-user=${GHUSER} \
 --git-email=${GHUSER}@users.noreply.github.com \
---git-url=git@github.com:${GHUSER}/content-gitops \
+--git-url=git@github.com:${GHUSER}/GitOps \
 --git-path=namespaces,workloads \
 --namespace=flux | kubectl apply -f -
 Verify The Deployment and Obtain the RSA Key
